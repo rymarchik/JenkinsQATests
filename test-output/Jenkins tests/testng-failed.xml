@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Jenkins tests]">
+  <test name="test">
+    <packages>
+      <package name="com.rymarchik.tests.*"/>
+    </packages>
+    <classes>
+      <class name="com.rymarchik.tests.BasicTest"/>
+      <class name="com.rymarchik.tests.LoginLogoutTest"/>
+    </classes>
+  </test> <!-- test -->
+</suite> <!-- Failed suite [Jenkins tests] -->
