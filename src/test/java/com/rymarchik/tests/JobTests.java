@@ -1,6 +1,7 @@
 package com.rymarchik.tests;
 
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -8,36 +9,38 @@ import org.testng.annotations.Test;
 import com.rymarchik.pages.HomePage;
 import com.rymarchik.pages.JobPage;
 import com.rymarchik.pages.LoginPage;
+import com.rymarchik.utils.ConfigProperties;
 
 public class JobTests extends BasicTest {
 	
 	private LoginPage loginPage = PageFactory.initElements(getWebDriver(), LoginPage.class);
 	private HomePage homePage = PageFactory.initElements(getWebDriver(), HomePage.class);
-	private JobPage jobPage;
-
-//	@Test
-//	public void jobCreationTest() throws Exception {
-//		loginPage.open();
-//		homePage = loginPage.login(admin);
-//		jobPage = homePage.createJob();
-//		assertTrue(jobPage.isJobCreated());
-//	}
+	private JobPage jobPage = PageFactory.initElements(getWebDriver(), JobPage.class);
+	
 	@Test
-	public void jobCreationTest2() throws Exception {
+	public void jobCreationTest() throws Exception {
 		homePage.open();
 		if (loginPage.isLoggedOut())
-			homePage = loginPage.login(admin);
+			loginPage.login(admin);
 		jobPage = homePage.createJob();
-		assertTrue(jobPage.isJobCreated());
+		assertEquals(jobPage.getJobName(), ConfigProperties.getProperty("job.finalname"));
 	}
 	
 	@Test
 	public void jobEditionTest() throws Exception {
-		
+		jobPage.open();
+		if (loginPage.isLoggedOut())
+			loginPage.login(admin);
+		jobPage.editJob();
+		assertEquals(jobPage.getJobDescription(), ConfigProperties.getProperty("job.description"));
 	}
 	
 	@Test
 	public void jobRemovalTest() throws Exception {
-		
+		jobPage.open();
+		if (loginPage.isLoggedOut())
+			loginPage.login(admin);
+		jobPage.deleteJob();
+		assertFalse(jobPage.isJobNotDeleted());
 	}
 }

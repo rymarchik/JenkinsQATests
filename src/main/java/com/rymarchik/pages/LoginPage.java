@@ -3,7 +3,6 @@ package com.rymarchik.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import com.rymarchik.entities.User;
 import com.rymarchik.utils.ConfigProperties;
@@ -23,19 +22,28 @@ public class LoginPage extends Page {
 	@FindBy(id = "yui-gen1-button")
 	private WebElement buttonLogin;
 	
-	@FindBy(css = "b")
-	private WebElement linkLogIn;
+	@FindBy(css = "td")
+	private WebElement textLogin;
+	
+	@FindBy(xpath = "//div[@id='header']/div[2]/span/a[2]/b")
+	private WebElement linkLogOut;
 	
 	public boolean isLoggedOut() {
-		return isElementPresent(linkLogIn);
+		return isElementPresent(fieldLogin);
+	}
+	
+	public boolean isLoggedIn() {
+		return isElementPresent(linkLogOut);
 	}
 
-	public HomePage login(User admin) {
-		linkLogIn.click();
+	public void login(User admin) {
 		type(fieldLogin, admin.getLogin());
 		type(fieldPassword, admin.getPassword());
 		buttonLogin.click();
-		return PageFactory.initElements(driver, HomePage.class);
+	}
+	
+	public void logout() {
+		linkLogOut.click();
 	}
 
 	public void open() {

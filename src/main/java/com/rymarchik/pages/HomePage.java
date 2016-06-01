@@ -13,9 +13,6 @@ public class HomePage extends Page {
 		super(driver);
 	}
 	
-	@FindBy(xpath = "//div[@id='header']/div[2]/span/a[2]/b")
-	private WebElement linkLogOut;
-	
 	@FindBy(linkText = "Создать Item")
 	private WebElement linkCreateJob;
 
@@ -23,7 +20,7 @@ public class HomePage extends Page {
 	private WebElement fieldJobName;
 	
 	@FindBy(css = "div.desc")
-	private WebElement buttonJobType;
+	private WebElement linkJobType;
 	
 	@FindBy(id = "ok-button")
 	private WebElement buttonJobSubmit;
@@ -31,22 +28,24 @@ public class HomePage extends Page {
 	@FindBy(id = "yui-gen37-button")
 	private WebElement buttonJobSave;
 	
-	public boolean isLoggedIn() {
-		return isElementPresent(linkLogOut);
-	}
 	
-	public LoginPage logout() {
-		linkLogOut.click();
-		return PageFactory.initElements(driver, LoginPage.class);
-	}
 	
 	public JobPage createJob() {
 		linkCreateJob.click();
 		type(fieldJobName, ConfigProperties.getProperty("job.name"));
-		buttonJobType.click();
+		linkJobType.click();
 		buttonJobSubmit.click();
 		buttonJobSave.click();
 		return PageFactory.initElements(driver, JobPage.class);
+	}
+	
+	public DomainPage createDomain() {
+//		linkCreateJob.click();
+//		type(fieldJobName, ConfigProperties.getProperty("job.name"));
+//		linkJobType.click();
+//		buttonJobSubmit.click();
+//		buttonJobSave.click();
+		return PageFactory.initElements(driver, DomainPage.class);
 	}
 
 	@Override
