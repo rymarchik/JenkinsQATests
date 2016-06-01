@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Jenkins tests" duration-ms="6026" started-at="2016-05-31T21:18:31Z" finished-at="2016-05-31T21:18:37Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="6026" started-at="2016-05-31T21:18:31Z" finished-at="2016-05-31T21:18:37Z">
+      <class name="com.rymarchik.tests.LoginLogoutTest">
+        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.rymarchik.tests.LoginLogoutTest@44821a96]" name="loginLogoutTest" duration-ms="5317" started-at="2016-06-01T00:18:31Z" finished-at="2016-06-01T00:18:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+      </class> <!-- com.rymarchik.tests.LoginLogoutTest -->
+      <class name="com.rymarchik.tests.BasicTest">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rymarchik.tests.BasicTest@732c2a62]" name="tearDown" is-config="true" duration-ms="694" started-at="2016-06-01T00:18:37Z" finished-at="2016-06-01T00:18:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.rymarchik.tests.BasicTest -->
+    </test> <!-- test -->
+  </suite> <!-- Jenkins tests -->
+</testng-results>

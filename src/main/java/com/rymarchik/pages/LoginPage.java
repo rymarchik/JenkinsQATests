@@ -15,16 +15,16 @@ public class LoginPage extends Page {
 	}
 
 	@FindBy(id = "j_username")
-	public WebElement fieldLogin;
+	private WebElement fieldLogin;
 	
 	@FindBy(name = "j_password")
-	public WebElement fieldPassword;
+	private WebElement fieldPassword;
 	
 	@FindBy(id = "yui-gen1-button")
-	public WebElement buttonLogin;
+	private WebElement buttonLogin;
 	
 	@FindBy(css = "b")
-	public WebElement linkLogIn;
+	private WebElement linkLogIn;
 	
 	public boolean isLoggedOut() {
 		return isElementPresent(linkLogIn);
@@ -37,8 +37,7 @@ public class LoginPage extends Page {
 		buttonLogin.click();
 		return PageFactory.initElements(driver, HomePage.class);
 	}
-	
-	@Override
+
 	public void open() {
 		driver.get(ConfigProperties.getProperty("login.url"));
 	}

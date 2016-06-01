@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Jenkins tests" duration-ms="6056" started-at="2016-05-31T20:24:05Z" finished-at="2016-05-31T20:24:11Z">
+  <suite name="Default suite" duration-ms="9434" started-at="2016-06-01T01:43:34Z" finished-at="2016-06-01T01:43:44Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="6056" started-at="2016-05-31T20:24:05Z" finished-at="2016-05-31T20:24:11Z">
-      <class name="com.rymarchik.tests.LoginLogoutTest">
-        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.rymarchik.tests.LoginLogoutTest@5acf93bb]" name="loginLogoutTest" duration-ms="5536" started-at="2016-05-31T23:24:05Z" finished-at="2016-05-31T23:24:10Z">
+    <test name="Default test" duration-ms="9434" started-at="2016-06-01T01:43:34Z" finished-at="2016-06-01T01:43:44Z">
+      <class name="com.rymarchik.tests.JobTests">
+        <test-method status="PASS" signature="jobCreationTest2()[pri:0, instance:com.rymarchik.tests.JobTests@22ef9844]" name="jobCreationTest2" duration-ms="8900" started-at="2016-06-01T04:43:34Z" finished-at="2016-06-01T04:43:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-      </class> <!-- com.rymarchik.tests.LoginLogoutTest -->
-      <class name="com.rymarchik.tests.BasicTest">
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rymarchik.tests.BasicTest@614ca7df]" name="tearDown" is-config="true" duration-ms="494" started-at="2016-05-31T23:24:10Z" finished-at="2016-05-31T23:24:11Z">
+        </test-method> <!-- jobCreationTest2 -->
+        <test-method status="PASS" signature="jobEditionTest()[pri:0, instance:com.rymarchik.tests.JobTests@22ef9844]" name="jobEditionTest" duration-ms="1" started-at="2016-06-01T04:43:43Z" finished-at="2016-06-01T04:43:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobEditionTest -->
+        <test-method status="PASS" signature="jobRemovalTest()[pri:0, instance:com.rymarchik.tests.JobTests@22ef9844]" name="jobRemovalTest" duration-ms="1" started-at="2016-06-01T04:43:43Z" finished-at="2016-06-01T04:43:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobRemovalTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rymarchik.tests.JobTests@22ef9844]" name="tearDown" is-config="true" duration-ms="510" started-at="2016-06-01T04:43:43Z" finished-at="2016-06-01T04:43:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.rymarchik.tests.BasicTest -->
-    </test> <!-- test -->
-  </suite> <!-- Jenkins tests -->
+      </class> <!-- com.rymarchik.tests.JobTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

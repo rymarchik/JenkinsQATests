@@ -12,14 +12,14 @@ public abstract class Page {
 		this.driver = driver;
 	}
 	
-	public abstract void open();
+	protected abstract void open();
 	
 	protected void type(WebElement element, String text) {
 		element.clear();
 		element.sendKeys(text);
 	}
 	
-	public boolean isElementPresent(WebElement element) {
+	protected boolean isElementPresent(WebElement element) {
 		try {
 			element.isDisplayed();
 			return true;

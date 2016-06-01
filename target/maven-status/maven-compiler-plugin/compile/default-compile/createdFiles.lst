@@ -1,0 +1,5 @@
+com\rymarchik\pages\LoginPage.class
+com\rymarchik\entities\User.class
+com\rymarchik\pages\HomePage.class
+com\rymarchik\pages\Page.class
+com\rymarchik\utils\ConfigProperties.class
