@@ -46,6 +46,10 @@ public class JobPage extends Page {
 	@FindBy(linkText = "Собрать сейчас")
 	private WebElement linkCreateAssembly;
 	
+	
+	@FindBy(id = "yui-gen1-button")
+	private WebElement buttonTurnOnOff;
+	
 	public String getJobName() {
 		return jobName.getText();
 	}
@@ -54,10 +58,19 @@ public class JobPage extends Page {
 		return jobDescription.getText();
 	}
 	
+	public String getButtonText() {
+		return buttonTurnOnOff.getText();
+	}
+	
+	public void turnJobOnOff() {
+		buttonTurnOnOff.click();
+	}
+	
 	public boolean isJobNotDeleted() {
 		return isElementPresent(jobName);
 		
 	}
+	
 	public void editJob() {
 		linkSettings.click();
 		type(fieldJobDescription, ConfigProperties.getProperty("job.description"));

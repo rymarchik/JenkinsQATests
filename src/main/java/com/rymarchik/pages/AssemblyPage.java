@@ -22,7 +22,7 @@ public class AssemblyPage extends Page {
 	private WebElement linkEditInfo;
 	
 	@FindBy(linkText = "Удалить сборку")
-	private WebElement linkDelete;
+	private WebElement linkDeleteAssembly;
 	
 	@FindBy(name = "displayName")
 	private WebElement fieldAssemblyName;
@@ -52,12 +52,12 @@ public class AssemblyPage extends Page {
 	}
 	
 	public void deleteAssembly() {
-		linkDelete.click();
+		linkDeleteAssembly.click();
 		buttonConfirmDelete.click();
 	}
 
 	@Override
 	public void open() {
-		driver.get(ConfigProperties.getProperty("job.url") + ConfigProperties.getProperty("job.name") + "/lastBuild");
+		driver.get(ConfigProperties.getProperty("job.url") + ConfigProperties.getProperty("job.newname") + "/lastBuild");
 	}
 }

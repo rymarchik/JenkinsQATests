@@ -1,5 +1,9 @@
-com\rymarchik\pages\LoginPage.class
-com\rymarchik\entities\User.class
 com\rymarchik\pages\HomePage.class
 com\rymarchik\pages\Page.class
+com\rymarchik\pages\UserPage.class
 com\rymarchik\utils\ConfigProperties.class
+com\rymarchik\pages\DomainPage.class
+com\rymarchik\pages\LoginPage.class
+com\rymarchik\entities\User.class
+com\rymarchik\pages\JobPage.class
+com\rymarchik\pages\AssemblyPage.class

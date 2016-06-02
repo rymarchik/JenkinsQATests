@@ -17,34 +17,47 @@ public class HomePage extends Page {
 	private WebElement linkCreateJob;
 
 	@FindBy(id = "name")
-	private WebElement fieldJobName;
+	private WebElement fieldName;
 	
 	@FindBy(css = "div.desc")
 	private WebElement linkJobType;
 	
 	@FindBy(id = "ok-button")
-	private WebElement buttonJobSubmit;
+	private WebElement buttonSubmit;
 	
 	@FindBy(id = "yui-gen37-button")
 	private WebElement buttonJobSave;
 	
 	
+	@FindBy(linkText = "Credentials")
+	private WebElement linkCredentials;
+	
+	@FindBy(linkText = "System")
+	private WebElement linkSystem;
+	
+	@FindBy(linkText = "Add domain")
+	private WebElement linkCreateDomain;
+	
+	@FindBy(name = "description")
+	private WebElement fieldDescription;
+	
 	
 	public JobPage createJob() {
 		linkCreateJob.click();
-		type(fieldJobName, ConfigProperties.getProperty("job.name"));
+		type(fieldName, ConfigProperties.getProperty("job.name"));
 		linkJobType.click();
-		buttonJobSubmit.click();
+		buttonSubmit.click();
 		buttonJobSave.click();
 		return PageFactory.initElements(driver, JobPage.class);
 	}
 	
 	public DomainPage createDomain() {
-//		linkCreateJob.click();
-//		type(fieldJobName, ConfigProperties.getProperty("job.name"));
-//		linkJobType.click();
-//		buttonJobSubmit.click();
-//		buttonJobSave.click();
+		linkCredentials.click();
+		linkSystem.click();
+		linkCreateDomain.click();
+		type(fieldName, ConfigProperties.getProperty("domain.name"));
+		type(fieldDescription, ConfigProperties.getProperty("domain.desc"));
+		buttonSubmit.click();
 		return PageFactory.initElements(driver, DomainPage.class);
 	}
 

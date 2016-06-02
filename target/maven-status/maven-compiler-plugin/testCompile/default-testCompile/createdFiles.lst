@@ -1,2 +1,6 @@
 com\rymarchik\tests\BasicTest.class
+com\rymarchik\tests\JobTests.class
+com\rymarchik\tests\DomainTests.class
 com\rymarchik\tests\LoginLogoutTest.class
+com\rymarchik\tests\AssemblyTests.class
+com\rymarchik\tests\UserTest.class

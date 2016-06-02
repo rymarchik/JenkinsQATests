@@ -19,7 +19,7 @@ public class AssemblyTests extends BasicTest {
 	
 	@Test
 	public void assemblyCreationTest() throws Exception {
-		jobPage.open();
+		jobPage.open(ConfigProperties.getProperty("job.url") + ConfigProperties.getProperty("job.newname"));
 		if (loginPage.isLoggedOut())
 			loginPage.login(admin);
 		assemblyPage = jobPage.createAssembly();

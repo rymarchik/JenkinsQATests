@@ -1,23 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Jenkins tests" duration-ms="6026" started-at="2016-05-31T21:18:31Z" finished-at="2016-05-31T21:18:37Z">
+  <suite name="Jenkins tests" duration-ms="179709" started-at="2016-06-02T00:28:47Z" finished-at="2016-06-02T00:31:46Z">
     <groups>
     </groups>
-    <test name="test" duration-ms="6026" started-at="2016-05-31T21:18:31Z" finished-at="2016-05-31T21:18:37Z">
+    <test name="test" duration-ms="179709" started-at="2016-06-02T00:28:47Z" finished-at="2016-06-02T00:31:46Z">
+      <class name="com.rymarchik.tests.UserTest">
+        <test-method status="PASS" signature="editUserInfoTest()[pri:0, instance:com.rymarchik.tests.UserTest@649bec2e]" name="editUserInfoTest" duration-ms="6831" started-at="2016-06-02T03:31:38Z" finished-at="2016-06-02T03:31:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editUserInfoTest -->
+      </class> <!-- com.rymarchik.tests.UserTest -->
       <class name="com.rymarchik.tests.LoginLogoutTest">
-        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.rymarchik.tests.LoginLogoutTest@44821a96]" name="loginLogoutTest" duration-ms="5317" started-at="2016-06-01T00:18:31Z" finished-at="2016-06-01T00:18:37Z">
+        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.rymarchik.tests.LoginLogoutTest@4e096385]" name="loginLogoutTest" duration-ms="4484" started-at="2016-06-02T03:31:34Z" finished-at="2016-06-02T03:31:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
       </class> <!-- com.rymarchik.tests.LoginLogoutTest -->
-      <class name="com.rymarchik.tests.BasicTest">
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rymarchik.tests.BasicTest@732c2a62]" name="tearDown" is-config="true" duration-ms="694" started-at="2016-06-01T00:18:37Z" finished-at="2016-06-01T00:18:37Z">
+      <class name="com.rymarchik.tests.AssemblyTests">
+        <test-method status="PASS" signature="assemblyCreationTest()[pri:0, instance:com.rymarchik.tests.AssemblyTests@2accdbb5]" name="assemblyCreationTest" duration-ms="3942" started-at="2016-06-02T03:28:47Z" finished-at="2016-06-02T03:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assemblyCreationTest -->
+        <test-method status="PASS" signature="assemblyEditionTest()[pri:0, instance:com.rymarchik.tests.AssemblyTests@2accdbb5]" name="assemblyEditionTest" duration-ms="15337" started-at="2016-06-02T03:28:50Z" finished-at="2016-06-02T03:29:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assemblyEditionTest -->
+        <test-method status="PASS" signature="assemblyRemovalTest()[pri:0, instance:com.rymarchik.tests.AssemblyTests@2accdbb5]" name="assemblyRemovalTest" duration-ms="14424" started-at="2016-06-02T03:29:06Z" finished-at="2016-06-02T03:29:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assemblyRemovalTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rymarchik.tests.AssemblyTests@2accdbb5]" name="tearDown" is-config="true" duration-ms="1088" started-at="2016-06-02T03:31:45Z" finished-at="2016-06-02T03:31:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.rymarchik.tests.BasicTest -->
+      </class> <!-- com.rymarchik.tests.AssemblyTests -->
+      <class name="com.rymarchik.tests.JobTests">
+        <test-method status="PASS" signature="jobCreationTest()[pri:0, instance:com.rymarchik.tests.JobTests@1613674b]" name="jobCreationTest" duration-ms="17962" started-at="2016-06-02T03:30:23Z" finished-at="2016-06-02T03:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobCreationTest -->
+        <test-method status="PASS" signature="jobEditionTest()[pri:0, instance:com.rymarchik.tests.JobTests@1613674b]" name="jobEditionTest" duration-ms="16110" started-at="2016-06-02T03:30:41Z" finished-at="2016-06-02T03:30:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobEditionTest -->
+        <test-method status="PASS" signature="jobTurnOnTurnOffTest()[pri:0, instance:com.rymarchik.tests.JobTests@1613674b]" name="jobTurnOnTurnOffTest" duration-ms="14064" started-at="2016-06-02T03:30:57Z" finished-at="2016-06-02T03:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobTurnOnTurnOffTest -->
+        <test-method status="PASS" signature="jobRemovalTest()[pri:0, instance:com.rymarchik.tests.JobTests@1613674b]" name="jobRemovalTest" duration-ms="23111" started-at="2016-06-02T03:31:11Z" depends-on-methods="com.rymarchik.tests.JobTests.jobTurnOnTurnOffTest" finished-at="2016-06-02T03:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobRemovalTest -->
+      </class> <!-- com.rymarchik.tests.JobTests -->
+      <class name="com.rymarchik.tests.DomainTests">
+        <test-method status="PASS" signature="domainCreationTest()[pri:0, instance:com.rymarchik.tests.DomainTests@b62d79]" name="domainCreationTest" duration-ms="17902" started-at="2016-06-02T03:29:20Z" finished-at="2016-06-02T03:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- domainCreationTest -->
+        <test-method status="PASS" signature="addCredentialsTest()[pri:0, instance:com.rymarchik.tests.DomainTests@b62d79]" name="addCredentialsTest" duration-ms="14965" started-at="2016-06-02T03:29:38Z" depends-on-methods="com.rymarchik.tests.DomainTests.domainCreationTest" finished-at="2016-06-02T03:29:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCredentialsTest -->
+        <test-method status="PASS" signature="domainEditionTest()[pri:0, instance:com.rymarchik.tests.DomainTests@b62d79]" name="domainEditionTest" duration-ms="14771" started-at="2016-06-02T03:29:53Z" depends-on-methods="com.rymarchik.tests.DomainTests.addCredentialsTest" finished-at="2016-06-02T03:30:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- domainEditionTest -->
+        <test-method status="PASS" signature="domainRemovalTest()[pri:0, instance:com.rymarchik.tests.DomainTests@b62d79]" name="domainRemovalTest" duration-ms="14693" started-at="2016-06-02T03:30:08Z" depends-on-methods="com.rymarchik.tests.DomainTests.domainEditionTest" finished-at="2016-06-02T03:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- domainRemovalTest -->
+      </class> <!-- com.rymarchik.tests.DomainTests -->
     </test> <!-- test -->
   </suite> <!-- Jenkins tests -->
 </testng-results>

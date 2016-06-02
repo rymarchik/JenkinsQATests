@@ -6,8 +6,12 @@
       <package name="com.rymarchik.tests.*"/>
     </packages>
     <classes>
+      <class name="com.rymarchik.tests.AssemblyTests"/>
       <class name="com.rymarchik.tests.BasicTest"/>
+      <class name="com.rymarchik.tests.DomainTests"/>
+      <class name="com.rymarchik.tests.JobTests"/>
       <class name="com.rymarchik.tests.LoginLogoutTest"/>
+      <class name="com.rymarchik.tests.UserTest"/>
     </classes>
   </test> <!-- test -->
 </suite> <!-- Failed suite [Jenkins tests] -->

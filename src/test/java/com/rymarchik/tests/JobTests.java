@@ -36,6 +36,17 @@ public class JobTests extends BasicTest {
 	}
 	
 	@Test
+	public void jobTurnOnTurnOffTest() throws Exception {
+		jobPage.open();
+		if (loginPage.isLoggedOut())
+			loginPage.login(admin);
+		jobPage.turnJobOnOff();
+		assertEquals(jobPage.getButtonText(), ConfigProperties.getProperty("job.button.off"));
+		jobPage.turnJobOnOff();
+		assertEquals(jobPage.getButtonText(), ConfigProperties.getProperty("job.button.on"));
+	}
+	
+	@Test(dependsOnMethods={"jobTurnOnTurnOffTest"})
 	public void jobRemovalTest() throws Exception {
 		jobPage.open();
 		if (loginPage.isLoggedOut())

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestSuite" time="5.318" errors="0" skipped="0">
+<testsuite tests="13" failures="0" name="TestSuite" time="178.59" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_92\jre\bin"/>
@@ -63,5 +63,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.rymarchik.tests.LoginLogoutTest" name="loginLogoutTest" time="5.318"/>
+  <testcase classname="com.rymarchik.tests.AssemblyTests" name="assemblyCreationTest" time="3.94"/>
+  <testcase classname="com.rymarchik.tests.AssemblyTests" name="assemblyEditionTest" time="15.327"/>
+  <testcase classname="com.rymarchik.tests.AssemblyTests" name="assemblyRemovalTest" time="14.425"/>
+  <testcase classname="com.rymarchik.tests.DomainTests" name="domainCreationTest" time="17.903"/>
+  <testcase classname="com.rymarchik.tests.DomainTests" name="addCredentialsTest" time="14.965"/>
+  <testcase classname="com.rymarchik.tests.DomainTests" name="domainEditionTest" time="14.771"/>
+  <testcase classname="com.rymarchik.tests.DomainTests" name="domainRemovalTest" time="14.694"/>
+  <testcase classname="com.rymarchik.tests.JobTests" name="jobCreationTest" time="17.963"/>
+  <testcase classname="com.rymarchik.tests.JobTests" name="jobEditionTest" time="16.11"/>
+  <testcase classname="com.rymarchik.tests.JobTests" name="jobTurnOnTurnOffTest" time="14.064"/>
+  <testcase classname="com.rymarchik.tests.JobTests" name="jobRemovalTest" time="23.113"/>
+  <testcase classname="com.rymarchik.tests.LoginLogoutTest" name="loginLogoutTest" time="4.484"/>
+  <testcase classname="com.rymarchik.tests.UserTest" name="editUserInfoTest" time="6.831"/>
 </testsuite>

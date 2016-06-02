@@ -14,6 +14,10 @@ public abstract class Page {
 	
 	protected abstract void open();
 	
+	public void open(String url) {
+		driver.get(url);
+	}
+	
 	protected void type(WebElement element, String text) {
 		element.clear();
 		element.sendKeys(text);
