@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="64003" started-at="2016-06-02T00:26:33Z" finished-at="2016-06-02T00:27:37Z">
+  <suite name="Default suite" duration-ms="63220" started-at="2016-06-02T00:38:54Z" finished-at="2016-06-02T00:39:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="64003" started-at="2016-06-02T00:26:33Z" finished-at="2016-06-02T00:27:37Z">
+    <test name="Default test" duration-ms="63220" started-at="2016-06-02T00:38:54Z" finished-at="2016-06-02T00:39:58Z">
       <class name="com.rymarchik.tests.JobTests">
-        <test-method status="PASS" signature="jobCreationTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobCreationTest" duration-ms="9794" started-at="2016-06-02T03:26:33Z" finished-at="2016-06-02T03:26:43Z">
+        <test-method status="PASS" signature="jobCreationTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobCreationTest" duration-ms="9438" started-at="2016-06-02T03:38:54Z" finished-at="2016-06-02T03:39:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jobCreationTest -->
-        <test-method status="PASS" signature="jobTurnOnTurnOffTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobTurnOnTurnOffTest" duration-ms="14207" started-at="2016-06-02T03:26:43Z" finished-at="2016-06-02T03:26:57Z">
+        <test-method status="PASS" signature="jobTurnOnTurnOffTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobTurnOnTurnOffTest" duration-ms="14186" started-at="2016-06-02T03:39:04Z" finished-at="2016-06-02T03:39:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jobTurnOnTurnOffTest -->
-        <test-method status="PASS" signature="jobEditionTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobEditionTest" duration-ms="16607" started-at="2016-06-02T03:26:57Z" finished-at="2016-06-02T03:27:13Z">
+        <test-method status="PASS" signature="jobEditionTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobEditionTest" duration-ms="16459" started-at="2016-06-02T03:39:18Z" finished-at="2016-06-02T03:39:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jobEditionTest -->
-        <test-method status="PASS" signature="jobRemovalTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobRemovalTest" duration-ms="22761" started-at="2016-06-02T03:27:13Z" depends-on-methods="com.rymarchik.tests.JobTests.jobTurnOnTurnOffTest" finished-at="2016-06-02T03:27:36Z">
+        <test-method status="PASS" signature="jobRemovalTest()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="jobRemovalTest" duration-ms="22575" started-at="2016-06-02T03:39:35Z" depends-on-methods="com.rymarchik.tests.JobTests.jobTurnOnTurnOffTest" finished-at="2016-06-02T03:39:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jobRemovalTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="tearDown" is-config="true" duration-ms="610" started-at="2016-06-02T03:27:36Z" finished-at="2016-06-02T03:27:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rymarchik.tests.JobTests@3f6b0be5]" name="tearDown" is-config="true" duration-ms="532" started-at="2016-06-02T03:39:57Z" finished-at="2016-06-02T03:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
